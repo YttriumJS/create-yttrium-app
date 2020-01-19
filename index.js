@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const os = require('os')
 const { spawn } = require('child_process')
 const fs = require('fs-extra')
