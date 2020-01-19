@@ -1,6 +1,6 @@
 const fs = require('fs')
 const { join } = require('path')
-const { URL } = require('url')
+const { parse } = require('url')
 const Y = require('yttrium-server')
 const index = require('./pages/index')
 const another = require('./pages/another')
@@ -26,8 +26,8 @@ $.route('index > static')
 $.route('index')
   .on('route', (e, req, res) => {
     e.stopPropagation()
-    const { searchParams } = new URL(req.url)
-    res.end(index({ name: searchParams.name }))
+    const { query } = parse(req.url, true)
+    res.end(index({ name: query.name }))
   })
 $.route('index > another')
   .on('route', (e, req, res) => {
