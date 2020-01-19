@@ -1,5 +1,5 @@
 {
-  "name": "create-yttrium-server",
+  "name": "create-yttrium-app",
   "version": "0.1.0",
   "scripts": {
     "start": "node index.js",
