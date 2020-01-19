@@ -46,4 +46,4 @@ $(server).listen(process.env.PORT || 3000)
 
 $(server).on('request', router)
 
-console.log('Server available on http://localhost:' + process.env.PORT || 3000)
+console.log('Server available on http://localhost:' + (process.env.PORT || 3000))
