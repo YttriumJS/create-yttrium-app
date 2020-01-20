@@ -36,7 +36,6 @@ async function main () {
   checkAppName(appName)
   fs.ensureDirSync(projectName)
   console.log(art())
-  console.log()
   console.log(`Creating a new Yttrium app in ${root}.`)
   console.log()
 
